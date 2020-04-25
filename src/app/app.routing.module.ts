@@ -1,17 +1,20 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { LoginViewComponent } from './views/login/login.component';
-import { HomeViewComponent } from './views/home/home.component';
+/*import { LoginViewComponent } from './views/login/login.component';
+import { HomeViewComponent } from './views/home/home.component';*/
 import { CatalogViewComponent } from './views/catalog/catalog.component';
 
 @NgModule({
-  declarations: [ 
+  /*declarations: [ 
     LoginViewComponent, HomeViewComponent, CatalogViewComponent
+  ],*/
+  declarations: [ 
+     CatalogViewComponent
   ],
   imports: [
     RouterModule.forRoot([
-      { path: 'login', component: LoginViewComponent },
-      { path: 'home', component: HomeViewComponent },
+      /*{ path: 'login', component: LoginViewComponent },
+      { path: 'home', component: HomeViewComponent },*/
       { path: 'catalog', component: CatalogViewComponent },
       { path: '**', redirectTo: 'login' }
     ])

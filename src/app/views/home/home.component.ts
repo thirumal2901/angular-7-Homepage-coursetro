@@ -6,12 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'home',
-  template: `
-    <div>
-      <h1>Home</h1>
-      <h3>Total users: # {{users?.length}}</h3>
-    </div>
-  `,
+  templateUrl: 'home.component.html',
 })
 export class HomeViewComponent {
   users;

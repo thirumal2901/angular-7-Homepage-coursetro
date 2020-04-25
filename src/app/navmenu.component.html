@@ -1,0 +1,15 @@
+ <div class="container" >
+<div *ngIf="isUserLoggedIn">
+    <a routerLinkActive="active" 
+       routerLink="/home">Home</a> | 
+
+    <a routerLinkActive="active" 
+      routerLink="/catalog">Catalog</a> 
+      
+    <button class="btn btn-primary"
+             (click)="onLoginOutClick()">
+            Logout
+            </button>
+</div>
+    <router-outlet></router-outlet>
+  </div>
