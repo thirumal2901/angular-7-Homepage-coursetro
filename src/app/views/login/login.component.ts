@@ -16,10 +16,10 @@ export class LoginViewComponent {
         this.router.navigate(['./home']);
     }*/
 
-    public username: string;
+    //public username: string;
     onSubmit() {
       if(this.username == "thiru" && this.passCred == "123" ){
-        isUserLoggedIn: boolean = true;
+        //isUserLoggedIn: boolean = true;
         this.router.navigate(['./home']);
       }else {
         alert("Either given username and password is wrong");
