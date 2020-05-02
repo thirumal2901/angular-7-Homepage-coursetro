@@ -15,6 +15,7 @@ export class LoginViewComponent {
 
    constructor(private router: Router){
       this._userPreferencesService = new UserPreferencesService();
+      //alert(this._userPreferencesService.colourPreference)
     }
 
   // Implement a getter to retrieve the colourPreference value
@@ -39,3 +40,4 @@ export class LoginViewComponent {
       }
     }
 }
+
