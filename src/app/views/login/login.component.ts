@@ -35,6 +35,10 @@ export class LoginViewComponent {
       if(this.username == "thiru" && this.passCred == "123" ){
         //isUserLoggedIn: boolean = true;
         this.router.navigate(['./home']);
+      }else if(this.username == ""){
+        alert("Username shouldn't empty");
+      }else if(this.passCred == ""){
+        alert("Password shouldn't empty");
       }else {
         alert("Either given username and password is wrong");
       }
