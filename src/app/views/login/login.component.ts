@@ -11,10 +11,10 @@ import { UserPreferencesService } from './userPreferences.service';
 export class LoginViewComponent {
 
   // Create a private variable to hold an instance of the UserPreferencesService
-    private _userPreferencesService: UserPreferencesService;
+   
 
-   constructor(private router: Router){
-      this._userPreferencesService = new UserPreferencesService();
+   constructor(private router: Router, private _userPreferencesService: UserPreferencesService){
+      
       //alert(this._userPreferencesService.colourPreference)
     }
 
@@ -34,6 +34,7 @@ export class LoginViewComponent {
     onSubmit() {
       if(this.username == "thiru" && this.passCred == "123" ){
         //isUserLoggedIn: boolean = true;
+        this._userPreferencesService.isUserLoggedIn = true;
         this.router.navigate(['./home']);
       }else if(this.username == ""){
         alert("Username shouldn't empty");

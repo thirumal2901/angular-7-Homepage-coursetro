@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 //import { HttpClient } from '@angular/common/http';
 //import { map } from 'rxjs/operators';
@@ -10,15 +10,20 @@ import { UserPreferencesService } from '../login/userPreferences.service';
   selector: 'home',
   templateUrl: 'home.component.html',
 })
-export class HomeViewComponent {
+export class HomeViewComponent implements OnInit {
   users;
-  private _userPreferencesService: UserPreferencesService;
+  userLoggedFlag: any;
+  
 
-  constructor(private http: Http) {
+  constructor(private http: Http, private _userPreferencesService: UserPreferencesService) {
     this.http.get('https://jsonplaceholder.typicode.com/users').map(res => res.json()).subscribe(res => this.users = res)
-    this._userPreferencesService = new UserPreferencesService();
     var isUserLoggedIn:any = true; 
-    //alert(isUserLoggedIn);
+    //alert (isUserLoggedIn);
+  }
+
+  ngOnInit(): void{
+    alert('entering home on init');
+    this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
   }
 
    get colour(): string {
