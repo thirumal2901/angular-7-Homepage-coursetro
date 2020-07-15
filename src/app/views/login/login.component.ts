@@ -33,8 +33,8 @@ export class LoginViewComponent {
     //public username: string;
     onSubmit() {
       if(this.username == "thiru" && this.passCred == "123" ){
-        //isUserLoggedIn: boolean = true;
-        this._userPreferencesService.isUserLoggedIn = true;
+        //this._userPreferencesService.isUserLoggedIn = true;
+        this._userPreferencesService.isUserLoggedIn = 123;
         this.router.navigate(['./home']);
       }else if(this.username == ""){
         alert("Username shouldn't empty");

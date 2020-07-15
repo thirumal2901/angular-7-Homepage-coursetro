@@ -17,7 +17,8 @@ export class HomeViewComponent implements OnInit {
 
   constructor(private http: Http, private _userPreferencesService: UserPreferencesService) {
     this.http.get('https://jsonplaceholder.typicode.com/users').map(res => res.json()).subscribe(res => this.users = res)
-    var isUserLoggedIn:any = true; 
+    //var isUserLoggedIn:any = true; 
+    var isUserLoggedIn:any; 
     //alert (isUserLoggedIn);
   }
 

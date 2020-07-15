@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserPreferencesService {
     colourPreference: string = 'red';
-    isUserLoggedIn: boolean = false;
+    //isUserLoggedIn: boolean = false;
+    isUserLoggedIn: number ;
 
 }
