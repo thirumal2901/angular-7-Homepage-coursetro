@@ -14,6 +14,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatButtonModule} from '@angular/material/button';
 
 import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list'
 
 const ROUTES: Route[] = [
   { path: '', component: LoginViewComponent},
@@ -26,7 +27,7 @@ const ROUTES: Route[] = [
   
   imports: [ 
     AppRoutingModule, 
-    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,MatCardModule, MatButtonModule, RouterModule.forRoot(ROUTES) 
+    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,MatCardModule, MatButtonModule, MatGridListModule,  RouterModule.forRoot(ROUTES) 
   ],
   providers: [],
   bootstrap: [ AppComponent ]
