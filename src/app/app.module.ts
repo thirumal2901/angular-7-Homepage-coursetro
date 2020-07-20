@@ -11,9 +11,9 @@ import { HomeViewComponent } from './views/home/home.component';
 import { NavMenuComponent } from './views/nav-menu/nav-menu.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatCardModule, MatButtonModule} from '@angular/material';
+import { MatButtonModule} from '@angular/material/button';
 
-
+import { MatCardModule } from '@angular/material/card';
 
 const ROUTES: Route[] = [
   { path: '', component: LoginViewComponent},
