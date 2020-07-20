@@ -32,3 +32,11 @@ const ROUTES: Route[] = [
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
+
+
+
+
+/*
+Material import reference
+
+https://www.tutorialspoint.com/angular_material7/angular_material7_card.htm*/
