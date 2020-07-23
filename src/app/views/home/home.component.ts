@@ -37,7 +37,7 @@ export class HomeViewComponent implements OnInit {
     //this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
 
      this.productJson = this._userPreferencesService.product;
-    console.log(this.productJson)
+    console.log(this.productJson);
 
     if(this.userLoggedFlag == "" || this.userLoggedFlag == undefined){
        //this.router.navigate(['./lo']); // remove comment
