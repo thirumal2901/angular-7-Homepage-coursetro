@@ -42,10 +42,20 @@
         <input matInput placeholder="price" value="">
       </mat-form-field>
       <br>
-      <mat-form-field class="example-full-width">
+      <!--<mat-form-field class="example-full-width">
         <mat-label>product category</mat-label>
         <input matInput placeholder="category" value="">
+      </mat-form-field>-->
+      <mat-form-field appearance="fill">
+        <mat-label>Category</mat-label>
+        <select matNativeControl required>
+          <option value="dress">Dress</option>
+          <option value="watch">Watch</option>
+          <option value="Sneaker">Sneaker</option>
+          <option value="bag">Bag</option>
+        </select>
       </mat-form-field>
+      <br>
       <br>
         <button mat-raised-button color="primary">Search</button>
     </form>
