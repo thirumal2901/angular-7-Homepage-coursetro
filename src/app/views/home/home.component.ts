@@ -15,6 +15,7 @@ import { UserPreferencesService } from '../login/userPreferences.service';
 export class HomeViewComponent implements OnInit {
   users;
   userLoggedFlag: any;
+   productJson: any;
   
 
   constructor(private http: Http,private router: Router, private _userPreferencesService: UserPreferencesService) {
@@ -34,6 +35,10 @@ export class HomeViewComponent implements OnInit {
     //alert('entering home on init');
     this.userLoggedFlag = true; // comment this and remove below line
     //this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
+
+     this.productJson = this._userPreferencesService.product;
+    console.log(this.productJson)
+
     if(this.userLoggedFlag == "" || this.userLoggedFlag == undefined){
        //this.router.navigate(['./lo']); // remove comment
     }
