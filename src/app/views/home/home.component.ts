@@ -25,9 +25,10 @@ export class HomeViewComponent implements OnInit {
 
   ngOnInit(): void{
     //alert('entering home on init');
-    this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
+    this.userLoggedFlag = true; // comment this and remove below line
+    //this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
     if(this.userLoggedFlag == "" || this.userLoggedFlag == undefined){
-       //this.router.navigate(['./lo']);
+       //this.router.navigate(['./lo']); // remove comment
     }
   }
 
