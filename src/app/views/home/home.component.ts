@@ -27,7 +27,7 @@ export class HomeViewComponent implements OnInit {
     //alert('entering home on init');
     this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
     if(this.userLoggedFlag == "" || this.userLoggedFlag == undefined){
-       this.router.navigate(['./lo']);
+       //this.router.navigate(['./lo']);
     }
   }
 
