@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatInputModule} from '@angular/material/input';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 //import {A11yModule} from '@angular/cdk/a11y';
 //import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -71,7 +72,7 @@ const ROUTES: Route[] = [
   
   imports: [ 
     AppRoutingModule, 
-    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,MatCardModule, MatButtonModule, MatGridListModule, MatMenuModule, MatInputModule,
+    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,MatCardModule, MatButtonModule, MatGridListModule, MatMenuModule, MatInputModule, MatCarouselModule,
     MatSidenavModule,   RouterModule.forRoot(ROUTES) 
   ],
   providers: [],

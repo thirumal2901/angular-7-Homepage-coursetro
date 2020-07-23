@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 //import { HttpClient } from '@angular/common/http';
 //import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
 import 'rxjs/add/operator/map';
 import { UserPreferencesService } from '../login/userPreferences.service';
 
@@ -21,7 +22,11 @@ export class HomeViewComponent implements OnInit {
     //var isUserLoggedIn:any = true; 
     var isUserLoggedIn:any; 
     //alert (isUserLoggedIn);
+
   }
+
+       // Slider Images
+  slides = [{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'},{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}];
 
   ngOnInit(): void{
     //alert('entering home on init');
