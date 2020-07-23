@@ -29,6 +29,12 @@
 </mat-menu>
 
 
+<mat-sidenav-container class="example-container" *ngIf="shouldRun">
+  <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+  <mat-sidenav-content>Main content</mat-sidenav-content>
+</mat-sidenav-container>
+
+
 	<!--<div>
 		<h1>Home</h1>
 		<h3>Total users: # {{users?.length}}</h3>
@@ -55,3 +61,6 @@
   </mat-grid-tile>
 </mat-grid-list>
 </div>
+
+
+<!--https://livebook.manning.com/book/angular-development-with-typescript-second-edition/chapter-3/11-->

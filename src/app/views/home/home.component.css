@@ -5,3 +5,13 @@
    background-image: url('https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg');
    background-size: cover;
 }
+
+// side menu
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}

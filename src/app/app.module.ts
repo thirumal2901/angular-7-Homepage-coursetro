@@ -15,6 +15,7 @@ import { MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list'
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 //import {A11yModule} from '@angular/cdk/a11y';
@@ -47,7 +48,7 @@ import {MatMenuModule} from '@angular/material/menu';
 //import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 //import {MatRadioModule} from '@angular/material/radio';
 //import {MatSelectModule} from '@angular/material/select';
-//import {MatSidenavModule} from '@angular/material/sidenav';
+
 //import {MatSliderModule} from '@angular/material/slider';
 //import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 //import {MatSnackBarModule} from '@angular/material/snack-bar';
@@ -70,7 +71,8 @@ const ROUTES: Route[] = [
   
   imports: [ 
     AppRoutingModule, 
-    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,MatCardModule, MatButtonModule, MatGridListModule, MatMenuModule,   RouterModule.forRoot(ROUTES) 
+    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,MatCardModule, MatButtonModule, MatGridListModule, MatMenuModule,
+    MatSidenavModule,   RouterModule.forRoot(ROUTES) 
   ],
   providers: [],
   bootstrap: [ AppComponent ]
