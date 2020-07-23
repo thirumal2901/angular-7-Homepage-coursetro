@@ -28,6 +28,8 @@ export class HomeViewComponent implements OnInit {
        // Slider Images
   slides = [{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'},{'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}, {'image': 'https://gsr.dev/material2-carousel/assets/demo.png'}];
 
+ 
+
   ngOnInit(): void{
     //alert('entering home on init');
     this.userLoggedFlag = true; // comment this and remove below line
