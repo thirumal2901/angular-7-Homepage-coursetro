@@ -49,6 +49,7 @@
       <mat-form-field appearance="fill">
         <mat-label>Category</mat-label>
         <select matNativeControl required>
+           <option value="">Select Category</option>
           <option value="dress">Dress</option>
           <option value="watch">Watch</option>
           <option value="Sneaker">Sneaker</option>
@@ -86,23 +87,8 @@
     </mat-carousel>
 
     <mat-grid-list cols="3" rowHeight="1:1">
-      <mat-grid-tile>
-        <mat-card>Product 1</mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card>Product 2</mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card>Product 3</mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card>Product 4</mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card>Product 5</mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card>Product 6</mat-card>
+      <mat-grid-tile *ngFor="let product of productJson">
+        <mat-card> <img [src]=product.imgUrl style="height:240px"/> <p> {{product.name}} </p> <p>Price : {{product.price| currency:"INR"}}</p></mat-card>
       </mat-grid-tile>
     </mat-grid-list>
   </mat-sidenav-content>

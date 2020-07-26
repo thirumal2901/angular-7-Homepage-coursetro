@@ -36,7 +36,7 @@ export class HomeViewComponent implements OnInit {
     this.userLoggedFlag = true; // comment this and remove below line
     //this.userLoggedFlag = this._userPreferencesService.isUserLoggedIn;
 
-     this.productJson = this._userPreferencesService.product;
+     this.productJson = this._userPreferencesService.product.arrayOfProducts;
     console.log(this.productJson);
 
     if(this.userLoggedFlag == "" || this.userLoggedFlag == undefined){
