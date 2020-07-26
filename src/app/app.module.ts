@@ -4,11 +4,15 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Route, RouterModule } from '@angular/router';
 
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
 import { LoginViewComponent } from './views/login/login.component';
 import { HomeViewComponent } from './views/home/home.component';
+import { FilterPipe} from './views/home/filterpipe';
 import { NavMenuComponent } from './views/nav-menu/nav-menu.component';
+
+
 // Material 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatButtonModule} from '@angular/material/button';
@@ -68,7 +72,7 @@ const ROUTES: Route[] = [
 ]
 
 @NgModule({
-  declarations: [ AppComponent, LoginViewComponent, HomeViewComponent,  NavMenuComponent],
+  declarations: [ AppComponent, LoginViewComponent, HomeViewComponent,  NavMenuComponent, FilterPipe],
   
   imports: [ 
     AppRoutingModule, 

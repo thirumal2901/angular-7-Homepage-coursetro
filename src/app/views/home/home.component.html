@@ -60,6 +60,8 @@
       <br>
         <button mat-raised-button color="primary">Search</button>
     </form>
+    <br>    
+    <input [(ngModel)]="searchText" placeholder="search text goes here">
   </mat-sidenav>
   <mat-sidenav-content>
      <mat-carousel
@@ -87,7 +89,7 @@
     </mat-carousel>
 
     <mat-grid-list cols="3" rowHeight="1:1">
-      <mat-grid-tile *ngFor="let product of productJson">
+      <mat-grid-tile *ngFor="let product of productJson | filter : searchText">
         <mat-card> <img [src]=product.imgUrl style="height:240px"/> <p> {{product.name}} </p> <p>Price : {{product.price| currency:"INR"}}</p></mat-card>
       </mat-grid-tile>
     </mat-grid-list>
